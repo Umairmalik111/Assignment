@@ -1,0 +1,51 @@
+<!-- header.component.html -->
+<header class="navbar navbar-expand-lg navbar-light bg-light border-bottom p-0">
+  <span class="header--item m-0 d-md-none d-flex" (click)="toggleMenu()">
+    <i class="bi bi-list fs-2"></i>
+  </span>
+  <a class="navbar-brand header--item m-0 d-md-flex d-none" href="#">
+    <img src="../assets/images/logo.png" alt="Logo" height="40" class="d-inline-block align-text-top">
+  </a>
+  <a href="#" class="header--item hover-bg-light ">
+    <i class="bi bi-telephone-plus-fill fs-3 text-muted"></i>
+  </a>
+  <div class="d-flex align-items-center justify-content-between flex-grow-1 header--item d-sm-flex d-none">
+    <h5 class="m-0 letter-spacing-1 fw-semibold d-xxl-flex d-none text-danger">We are facing high call volume at the moment</h5>
+    <h5 class="m-0 letter-spacing-1 fw-semibold d-xxl-flex d-none text-primary">Last billing date is 5th June 2022</h5>
+  </div>
+  <div class="header--item d-sm-flex d-none">
+    <button class="btn btn-outline-primary">Clear contact</button>
+  </div>
+  <div class="header--item flex-grow-sm-1">
+    <div class="dropdown status-dropdown">
+      <button class="btn border-0 dropdown-toggle text-start p-0 pe-5" style="min-width: 180px;" type="button"
+        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="fw-normal mb-0 text-truncate text-capitalize text-danger" style="max-width: 180px;">
+          pending busy</h6>
+        <small class="text-gray-500">00:23:00</small>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header--item">
+    <div class="dropdown profile-dropdown">
+      <button class="btn border-0 dropdown-toggle p-0" type="button"
+        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="avatar">
+          <img src="../assets/images/avatar.png" class="rounded-circle" style="width: 40px; height: 40px;"
+            alt="avatar" />
+        </div>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- header.component.html -->

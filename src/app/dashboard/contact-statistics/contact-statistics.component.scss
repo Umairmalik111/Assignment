@@ -1,0 +1,61 @@
+.contact-statistics {
+    h3 {font-size: 14px;}
+    
+    h2 {
+        font-size: 34px; margin: 10px 0;
+
+        @media screen and (max-width: 1420px) {
+            font-size: 28px;
+        }
+    }
+
+    .call-stats {
+        display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 14px; font-size: 11px; padding: 0; margin: 0; list-style: none;
+
+        li {
+            display: flex; align-items: center; grid-gap: 6px; min-width: 50%; 
+
+            span {--size: 12px; width: var(--size); height: var(--size); border-radius: var(--size); background-color: var(--light-gray);}
+
+            &.primary {
+                span {background-color: var(--bs-primary);}
+            }
+            &.success {
+                span {background-color: var(--success);}
+            }
+            &.warning {
+                span {background-color: var(--warning);}
+            }
+            &.danger {
+                span {background-color: var(--warning-danger);}
+            }
+        }
+    }
+
+    .view-contact-info {
+        list-style: none; margin: 0; display: flex; flex-direction: column; grid-gap: 5px; 
+
+        input {accent-color: var(--bs-primary);}
+
+        li {font-size: 10px; display: flex; align-items: center; grid-gap: 5px;}
+
+        @media screen and (max-width: 767px) {
+            padding: 0; display: flex; align-items: center; flex-direction: row; grid-gap: 15px; margin-top: 15px;
+        }
+    }
+
+    .progress-holder {
+        width: 100%; height: 5px; border-radius: 16px; overflow: hidden; display: flex; align-items: center; margin: 15px 0 0;
+        > div {
+            height: 100%;
+            
+            &:not(:last-child) {border-right: 3px solid #fff;}
+        }
+
+        .primary {background-color: var(--bs-primary);}
+        .success {background-color: var(--success);}
+        .warning {background-color: var(--warning);}
+        .warning-danger {background-color: var(--warning-danger);}
+    }
+
+}
